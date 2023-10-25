@@ -1,6 +1,5 @@
 package DZ4;
 
-//
 public class Book {
     private String id;
     private String title;
