@@ -6,10 +6,10 @@ class NumsList:
         self.list2 = list2
 
     @staticmethod
-    def arithmetic_mean(input_list):
-        if len(input_list) == 0:
+    def arithmetic_mean(list):
+        if len(list) == 0:
             return 0
-        return sum(input_list) / len(input_list)
+        return sum(list) / len(list)
 
     def compare_nums_lists(self):
 
@@ -17,7 +17,7 @@ class NumsList:
         average2 = self.arithmetic_mean(self.list2)
 
         if average1 > average2:
-            return "Первый список имеет большее среднее значение"
+            return "У первого списка среднее арифметическое больше"
         if average1 < average2:
-            return "Второй список имеет большее среднее значение"
-        return "Средние значения равны"
+            return "У второго списка среднее арифметическое больше"
+        return "Средние арифметические равны"
